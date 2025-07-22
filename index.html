@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- Define o tipo do documento -->
+<html lang="pt-br"> <!-- Define o idioma da página -->
+<head>
+    <meta charset="UTF-8"> <!-- Suporte a acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsivo -->
+    <title>Pretu's Burguer</title> <!-- Título da aba -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css"> <!-- Link com o CSS externo -->
+</head>
+<body>
+    <header> <!-- Cabeçalho do site -->
+        <div class="logo">Pretu's Burguer</div> <!-- Nome da hamburgueria -->
+        <nav> <!-- Menu de navegação -->
+            <ul>
+                <li><a href="#menu">Cardápio</a></li> <!-- Link para seção do cardápio -->
+                <li><a href="#sobre">Sobre</a></li> <!-- Link para seção sobre nós -->
+                <li><a href="#contato">Contato</a></li> <!-- Link para contato -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner"> <!-- Banner principal com destaque -->
+        <h1>Sabor que conquista</h1> <!-- Frase de impacto -->
+        <p>Hambúrgueres artesanais feitos com paixão</p> <!-- Subtítulo -->
+    </section>
+
+    <section id="menu" class="menu">
+  <h2>Nosso Cardápio</h2>
+
+  <div class="item" data-nome="Burguer Clássico" data-preco="25">
+    <div class="info-lanche">
+      <h3>Burguer Clássico</h3>
+      <span class="preco">R$ 25,00</span>
+    </div>
+    <p>Pão, carne 150g, queijo, alface e tomate</p>
+    <textarea placeholder="Alguma observação? (ex: sem tomate)"></textarea>
+    <button onclick="adicionarAoCarrinho(this)">Adicionar</button>
+  </div>
+
+  <!-- Repita esse bloco para outros hambúrgueres -->
+  </div>
+
+  <div class="item" data-nome="Cheddar Bacon" data-preco="29">
+    <div class="info-lanche">
+    <h3>Cheddar Bacon</h3>
+    <span class="preco">R$ 30,00</span>
+    </div>
+    <p>Carne, cheddar cremoso e bacon crocante</p>
+    <textarea placeholder="Alguma observação? (ex: sem bacon)"></textarea>
+    <button onclick="adicionarAoCarrinho(this)">Adicionar</button>
+  </div>
+</section>
+
+<section class="carrinho" id="carrinho">
+  <h2>🛒 Carrinho</h2>
+  <ul id="lista-carrinho"></ul>
+  <p>Total: R$ <span id="total">0</span></p>
+            <button class="btn-whatsapp" onclick="enviarPedidoWhatsApp()">
+            <i class="fab fa-whatsapp"></i> Enviar Pedido via WhatsApp
+            </button>
+  
+
+</section>
+
+    <section id="sobre" class="sobre"> <!-- Seção sobre nós -->
+        <h2>Sobre o Pretu's Burguer</h2>
+        <p>Um espaço criado para quem valoriza o sabor...</p> <!-- Texto descritivo -->
+    </section>
+
+    <section id="contato" class="contato"> <!-- Seção de contato -->
+        <h2>Entre em Contato</h2>
+        <form> <!-- Formulário simples -->
+            <input type="text" placeholder="Seu nome" required> <!-- Nome -->
+            <input type="email" placeholder="Seu e-mail" required> <!-- Email -->
+            <textarea placeholder="Mensagem" required></textarea> <!-- Mensagem -->
+            <button>Enviar</button>
+        </form>
+    </section>
+
+    <footer> <!-- Rodapé -->
+        <p>&copy; 2025 Pretu's Burguer. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

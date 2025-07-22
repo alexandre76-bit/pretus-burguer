@@ -1,0 +1,183 @@
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui borda no cálculo do tamanho */
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif; /* Fonte moderna */
+    background-color: #fff8f0; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+header {
+    background-color: #111; /* Cor escura no topo */
+    color: #fff; /* Texto branco */
+    padding: 15px 20px;
+    display: flex; /* Itens lado a lado */
+    justify-content: space-between; /* Espaço entre logo e menu */
+    align-items: center;
+    position: sticky; /* Cabeçalho fixo ao rolar */
+    top: 0;
+    z-index: 1000; /* Fica acima dos outros elementos */
+}
+
+.logo {
+    font-size: 1.5em; /* Tamanho da logo */
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none; /* Remove bolinhas da lista */
+    display: flex; /* Itens lado a lado */
+    gap: 20px; /* Espaço entre links */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: 500;
+}
+
+.banner {
+    background: url('https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg') center/cover no-repeat; /* Imagem de fundo */
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    color: white;
+    text-shadow: 2px 2px 4px #000; /* Sombra no texto */
+    text-align: center;
+    padding: 20px;
+}
+
+.menu, .sobre, .contato {
+    padding: 40px 20px;
+    max-width: 900px; /* Largura máxima para melhor leitura */
+    margin: auto;
+}
+
+.menu .item {
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.menu button {
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.contato button {
+  font-size: 18px;
+  background-color: #111;
+  border: none;
+  color: #fefefe;
+  text-align: center;
+  cursor: pointer;
+  height: 50px
+
+}
+
+.contato input, .contato textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Menu vira coluna no celular */
+        gap: 10px;
+    }
+
+    .banner {
+        height: 200px; /* Altura menor no celular */
+    }
+}
+
+.carrinho {
+  background-color: #fff;
+  border-top: 2px solid #111;
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.carrinho ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carrinho li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.carrinho button {
+  margin-left: 10px;
+}
+
+
+.info-lanche {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preco {
+  background-color: #111;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn-whatsapp {
+  background-color: #25d366; /* Verde WhatsApp */
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(37, 211, 102, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe57; /* Tom mais escuro no hover */
+}
+
+.btn-whatsapp i {
+  font-size: 1.5rem;
+}
