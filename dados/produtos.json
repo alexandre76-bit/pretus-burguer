@@ -1,0 +1,46 @@
+[
+    {
+    "nome": "X-Carne Duplo",
+    "descricao": "2 X-Burguers de carne, queijo, bacon e molho especial",
+    "preco": 32.99,
+    "categoria": "X-Burguer",
+    "promocao": {
+        "ativa": true,
+        "precoPromo": 25.99,
+        "validade": "2025-07-31"
+      }
+    },
+    {
+        "nome": "Refrigerante Lata",
+        "descricao": "lata 350ml (fanta, coca, guaraná)",
+        "preco": "4.72",
+        "categoria": "bebidas",
+        "promocao": {
+        "ativa": true,
+        "precoPromo": 4.50,
+        "validade":"2025-07-31"
+        }
+    },
+    {
+        "nome": "Combo Economy",
+        "descricao": "2 Saborosos hambúrgueres Smash Salada, fritas com cheddar e bacon, maionese especial e acompanha refrigerante 600ml (Guaraná)",
+        "preco": 65.90,
+        "categoria": "combos",
+        "promocao": {
+            "ativa": true,
+            "precoPromo": 50.90,
+            "validade": "2025-07-31"
+        }
+    },
+    {
+        "nome": "Dog Calabresa fatiada",
+        "descricao": "Maionese, catchup, mostarda, molho de alho, molho shoyu, alface, tomate, milho, ervilha, batata palha e queijo",
+        "preco": 24.90,
+        "categoria": "dog",
+        "promocao": {
+            "ativa": true,
+            "precoPromo": 20.99,
+            "validade": "2025-07-31"
+        }
+    }
+]
